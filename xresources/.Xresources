@@ -2,7 +2,7 @@ xterm*background:      black
 xterm*eightBitInput:   false
 xterm*faceName:        Inconsolata
 xterm*faceSize:        12
-xterm*foreground:      gray
+xterm*foreground:      white
 xterm*metaSendsEscape: true
 xterm*on4Clicks:       group
 xterm*on5Clicks:       page
