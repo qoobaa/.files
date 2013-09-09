@@ -1,0 +1,11 @@
+XXkb.image.path: ~/.xxkb
+XXkb.mainwindow.type: tray
+XXkb.mainwindow.enable: yes
+XXkb.mainwindow.label.enable: no
+XXkb.mainwindow.geometry: 20x20+0+0
+XXkb.mainwindow.image.1: pl15.xpm
+XXkb.mainwindow.image.2: sp15.xpm
+XXkb.mainwindow.image.3:
+XXkb.mainwindow.image.4:
+XXkb.controls.mainwindow_delete: no
+XXkb.button.enable: no
