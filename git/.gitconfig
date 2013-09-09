@@ -1,0 +1,15 @@
+[user]
+	name = Kuba Kuźma
+	email = kuba@jah.pl
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[push]
+	default = matching
