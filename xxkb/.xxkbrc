@@ -1,4 +1,4 @@
-XXkb.image.path: ~/.xxkb
+XXkb.image.path: /home/kuba/.xxkb
 XXkb.mainwindow.type: tray
 XXkb.mainwindow.enable: yes
 XXkb.mainwindow.label.enable: no
