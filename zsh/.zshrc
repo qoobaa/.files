@@ -35,7 +35,10 @@ source $ZSH/oh-my-zsh.sh
 
 export GOPATH=$HOME/.go
 export GEM_HOME=$HOME/.gem/ruby/2.0.0
+export PATH=$PATH:$HOME/.gem/ruby/2.0.0/bin
 
 alias webserver="python -m http.server"
 
 export PATH=$PATH:./node_modules/.bin
+export PATH=$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
