@@ -34,8 +34,8 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 export GOPATH=$HOME/.go
-
-export PATH=$PATH:$HOME/.gem/ruby/2.0.0/bin:./node_modules/.bin
 export GEM_HOME=$HOME/.gem/ruby/2.0.0
 
-alias webserver="python2 -mSimpleHTTPServer"
+alias webserver="python -m http.server"
+
+export PATH=$PATH:./node_modules/.bin
