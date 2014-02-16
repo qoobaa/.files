@@ -34,6 +34,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 export GOPATH=$HOME/.go
+export PATH=$PATH:/opt/android-sdk/tools:/opt/android-sdk/build-tools/19.0.1:/opt/android-sdk/platform-tools
 
 alias webserver="python -m http.server"
 

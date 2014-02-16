@@ -43,3 +43,6 @@
 (add-hook 'ruby-mode-hook 'ruby-end-mode)
 (add-hook 'ruby-mode-hook 'ruby-tools-mode)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
+(setenv "PATH" (concat (getenv "HOME") "/.rbenv/shims:" (getenv "HOME") "/.rbenv/bin:" (getenv "PATH")))
+(setq exec-path (cons (concat (getenv "HOME") "/.rbenv/shims") (cons (concat (getenv "HOME") "/.rbenv/bin") exec-path)))
