@@ -168,5 +168,7 @@ exec --no-startup-id pa-applet
 exec --no-startup-id chromium
 exec --no-startup-id dropboxd
 exec --no-startup-id setxkbmap -option "ctrl:nocaps"
+exec --no-startup-id pkill redshift || sleep 3 && redshift -l 50.3:18.6 -b 0.9 -t 5500:3700
 
 new_window 1pixel
+focus_follows_mouse no
