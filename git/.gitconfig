@@ -13,3 +13,5 @@
 	status = auto
 [push]
 	default = matching
+[core]
+	excludesfile = /home/kuba/.gitignore
