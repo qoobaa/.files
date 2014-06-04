@@ -86,9 +86,6 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-bindsym $mod+F9 exec /home/kuba/.i3/bright_up.sh
-bindsym $mod+F8 exec /home/kuba/.i3/bright_down.sh
-
 # Workspace names
 
 workspace "1:Web" output LVDS1
