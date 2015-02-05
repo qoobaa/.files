@@ -160,8 +160,8 @@ bar {
 
 exec --no-startup-id xsetroot -solid "#333333"
 exec --no-startup-id xset b off
-exec --no-startup-id xxkb
-exec --no-startup-id nm-applet
+#exec --no-startup-id xxkb
+#exec --no-startup-id nm-applet
 exec --no-startup-id pa-applet
 exec --no-startup-id chromium
 exec --no-startup-id dropboxd

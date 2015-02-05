@@ -12,6 +12,10 @@
  '(browse-url-browser-function (quote browse-url-chromium))
  '(browse-url-generic-program nil)
  '(coffee-tab-width 2)
+ '(custom-enabled-themes (quote (sanityinc-solarized-light)))
+ '(custom-safe-themes
+   (quote
+    ("4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" default)))
  '(erc-nick "qoobaa")
  '(erc-prompt-for-password t)
  '(global-linum-mode t)
@@ -24,9 +28,13 @@
  '(js2-enter-indents-newline t)
  '(js2-mode-escape-quotes nil)
  '(menu-bar-mode nil)
- '(package-archives (quote (("melpa" . "http://melpa.milkbox.net/packages/") ("gnu" . "http://elpa.gnu.org/packages/"))))
+ '(package-archives
+   (quote
+    (("melpa" . "http://melpa.milkbox.net/packages/")
+     ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(require-final-newline t)
  '(scroll-bar-mode nil)
+ '(scss-compile-at-save nil)
  '(show-trailing-whitespace t)
  '(tool-bar-mode nil)
  '(user-mail-address "kuba@jah.pl"))
@@ -38,7 +46,7 @@
  '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "unknown" :family "Inconsolata")))))
 
 ;; (load-theme 'zenburn t)
-(load-theme 'solarized-light t)
+;; (load-theme 'solarized-light t)
 
 (add-hook 'ruby-mode-hook 'flymake-ruby-load)
 (add-hook 'ruby-mode-hook 'ruby-end-mode)
