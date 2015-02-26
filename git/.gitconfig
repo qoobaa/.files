@@ -15,3 +15,4 @@
 	default = matching
 [core]
 	excludesfile = /home/kuba/.gitignore
+	editor = mcedit
