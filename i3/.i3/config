@@ -88,12 +88,13 @@ bindsym $mod+a focus parent
 
 # Workspace names
 
-workspace "1:Web" output LVDS1
-workspace "1:Emacs" output LVDS1
+workspace 1 output LVDS1
+workspace 2 output LVDS1
+workspace 3 output LVDS1
 
 # switch to workspace
-bindsym $mod+1 workspace 1:Web
-bindsym $mod+2 workspace 2:Emacs
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
 bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
@@ -104,8 +105,8 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1:Web
-bindsym $mod+Shift+2 move container to workspace 2:Emacs
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
 bindsym $mod+Shift+3 move container to workspace 3
 bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
@@ -153,7 +154,7 @@ bindsym $mod+r mode "resize"
 bar {
         # position top
         status_command i3status
-        font pango:Inconsolata 12
+        font pango:Inconsolata, Icons 12
 }
 
 # assign [instance="crx_nckgahadagoaajjgafhacjanaoiihapd"] 2
@@ -163,10 +164,13 @@ exec --no-startup-id xset b off
 #exec --no-startup-id xxkb
 #exec --no-startup-id nm-applet
 exec --no-startup-id pa-applet
-exec --no-startup-id chromium
 exec --no-startup-id dropbox
 exec --no-startup-id setxkbmap -option "ctrl:nocaps"
 exec --no-startup-id pkill redshift || sleep 3 && redshift -l 50.3:18.6 -b 0.9 -t 5500:3700
 exec --no-startup-id xrdb -merge ~/.Xresources
+exec --no-startup-id srandrd autorandr -c
+
 new_window 1pixel
 focus_follows_mouse no
+
+exec --no-startup-id i3-msg "workspace 2; exec emacs; workspace 1; exec chromium"
