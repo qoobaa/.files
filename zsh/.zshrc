@@ -39,5 +39,6 @@ export PATH=$PATH:/opt/android-sdk/tools:/opt/android-sdk/build-tools/19.0.1:/op
 alias webserver="python -m http.server"
 
 export PATH=$PATH:./node_modules/.bin
+export PATH=$PATH:$HOME/.local/bin
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
