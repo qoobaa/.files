@@ -1,9 +1,11 @@
 xterm*eightBitInput:   false
 xterm*faceName:        Inconsolata
-xterm*faceSize:        12
+xterm*faceSize:        14
 xterm*metaSendsEscape: true
 xterm*on4Clicks:       group
 xterm*on5Clicks:       page
+
+xterm*selectToClipboard: true
 
 ! Common
 
@@ -70,3 +72,4 @@ xterm*on5Clicks:       page
 *color13:                 S_violet
 *color14:                 S_base1
 *color15:                 S_base3
+
