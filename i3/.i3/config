@@ -131,9 +131,9 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
-bindsym XF86AudioMute exec amixer -q set Master toggle
+bindsym XF86AudioRaiseVolume exec amixer set Speaker 5%+ unmute && exec amixer set Master unmute
+bindsym XF86AudioLowerVolume exec amixer set Speaker 5%- unmute && exec amixer set Master unmute
+bindsym XF86AudioMute exec amixer set Speaker toggle && exec amixer set Master toggle
 
 # Screen locking
 bindsym $mod+Shift+l exec --no-startup-id xset s activate
