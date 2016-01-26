@@ -1,4 +1,4 @@
-(fset 'yes-or-no-p 'y-or-n-p)edi
+(fset 'yes-or-no-p 'y-or-n-p)
 
 (package-initialize)
 
@@ -27,6 +27,7 @@
  '(inhibit-startup-screen t)
  '(initial-scratch-message "")
  '(js2-enter-indents-newline t)
+ '(js2-indent-switch-body t)
  '(js2-mode-escape-quotes nil)
  '(menu-bar-mode nil)
  '(package-archives
