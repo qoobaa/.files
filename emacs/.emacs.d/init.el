@@ -1,4 +1,4 @@
-(fset 'yes-or-no-p 'y-or-n-p)
+(fset 'yes-or-no-p 'y-or-n-p)edi
 
 (package-initialize)
 
@@ -16,6 +16,7 @@
  '(custom-safe-themes
    (quote
     ("4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" default)))
+ '(editorconfig-mode t)
  '(erc-nick "qoobaa")
  '(erc-prompt-for-password t)
  '(global-linum-mode t)
@@ -32,6 +33,7 @@
    (quote
     (("melpa" . "http://melpa.milkbox.net/packages/")
      ("gnu" . "http://elpa.gnu.org/packages/"))))
+ '(projectile-global-mode t)
  '(require-final-newline t)
  '(scroll-bar-mode nil)
  '(scss-compile-at-save nil)
@@ -45,12 +47,12 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :background "#fdf6e3" :foreground "#657b83" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 140 :width normal :foundry "unknown" :family "Inconsolata")))))
 
-;; (load-theme 'zenburn t)
 (load-theme 'solarized t)
 
 (add-hook 'ruby-mode-hook 'flymake-ruby-load)
 (add-hook 'ruby-mode-hook 'ruby-end-mode)
 (add-hook 'ruby-mode-hook 'ruby-tools-mode)
+(add-hook 'js2-mode-hook 'qoobaa/js2-mode-setup)
 
 (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
@@ -59,4 +61,9 @@
 (setenv "PATH" (concat (getenv "HOME") "/.rbenv/shims:" (getenv "HOME") "/.rbenv/bin:" (getenv "PATH")))
 (setq exec-path (cons (concat (getenv "HOME") "/.rbenv/shims") (cons (concat (getenv "HOME") "/.rbenv/bin") exec-path)))
 
-(editorconfig-mode 1)
+(defun qoobaa/js2-mode-setup ()
+  (let ((local-eslint (expand-file-name "node_modules/.bin/eslint" (projectile-project-root))))
+    (setq flycheck-javascript-eslint-executable
+          (and (file-exists-p local-eslint) local-eslint)))
+  (flycheck-mode t)
+  (flycheck-select-checker 'javascript-eslint))
