@@ -64,7 +64,8 @@
 
 (defun qoobaa/js2-mode-setup ()
   (let ((local-eslint (expand-file-name "node_modules/.bin/eslint" (projectile-project-root))))
-    (setq flycheck-javascript-eslint-executable
-          (and (file-exists-p local-eslint) local-eslint)))
-  (flycheck-mode t)
-  (flycheck-select-checker 'javascript-eslint))
+    (when (file-exists-p local-eslint)
+      (setq flycheck-javascript-eslint-executable local-eslint)
+      (js2-mode-hide-warnings-and-errors)
+      (flycheck-mode t)
+      (flycheck-select-checker 'javascript-eslint))))
