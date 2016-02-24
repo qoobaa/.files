@@ -42,3 +42,11 @@ export PATH=$PATH:./node_modules/.bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
+
+function kpods() {
+    kubectl get pods --namespace=$1 --context=${2:-staging-cluster}
+}
+
+function kshell() {
+    kubectl exec -it $2 -c $3 --namespace=$1 --context=${4:-staging-cluster} -- env TERM=$TERM COLUMNS=$COLUMNS LINES=$LINES bash -il
+}
