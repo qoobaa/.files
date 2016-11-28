@@ -138,6 +138,9 @@ bindsym XF86AudioMute exec amixer set Speaker toggle && exec amixer set Master t
 # Screen locking
 bindsym $mod+Shift+l exec --no-startup-id xset s activate
 
+# Touchpad toggling
+bindsym $mod+F1 exec --no-startup-id touchpad-toggle.sh
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode

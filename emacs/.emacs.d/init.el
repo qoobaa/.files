@@ -34,6 +34,9 @@
    (quote
     (("melpa" . "http://melpa.milkbox.net/packages/")
      ("gnu" . "http://elpa.gnu.org/packages/"))))
+ '(package-selected-packages
+   (quote
+    (coffee-mode yaml-mode web-mode vue-mode scss-mode ruby-tools ruby-end rubocop projectile markdown-mode lua-mode langtool js2-mode jade-mode gist flymake-ruby flycheck editorconfig-core editorconfig color-theme-solarized)))
  '(projectile-global-mode t)
  '(require-final-newline t)
  '(scroll-bar-mode nil)
@@ -69,3 +72,6 @@
       (js2-mode-hide-warnings-and-errors)
       (flycheck-mode t)
       (flycheck-select-checker 'javascript-eslint))))
+
+(require 'langtool)
+(setq langtool-java-classpath "/usr/share/languagetool:/usr/share/java/languagetool/*")
