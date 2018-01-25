@@ -17,3 +17,5 @@
 [core]
 	excludesfile = ~/.gitignore
 	editor = mcedit
+[commit]
+	gpgsign = true
