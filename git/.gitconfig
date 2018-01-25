@@ -1,7 +1,7 @@
 [user]
 	name = Kuba Kuźma
 	email = kuba@kubakuzma.com
-	signingkey = 3ACB6CA1A9DB95D9
+	signingkey = EA54400CBC06F767
 [alias]
 	st = status
 	ci = commit
