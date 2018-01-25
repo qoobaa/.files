@@ -42,3 +42,5 @@ export PATH=$PATH:./node_modules/.bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
+
+export GPG_TTY=$(tty)
