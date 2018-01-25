@@ -26,6 +26,7 @@
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(initial-scratch-message "")
+ '(js-indent-level 2)
  '(js2-enter-indents-newline t)
  '(js2-indent-switch-body t)
  '(js2-mode-escape-quotes nil)
@@ -36,7 +37,7 @@
      ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(package-selected-packages
    (quote
-    (coffee-mode yaml-mode web-mode vue-mode scss-mode ruby-tools ruby-end rubocop projectile markdown-mode lua-mode langtool js2-mode jade-mode gist flymake-ruby flycheck editorconfig-core editorconfig color-theme-solarized)))
+    (csv-mode rjsx-mode scad-mode dockerfile-mode yaml-mode web-mode ruby-tools ruby-end markdown-mode js2-mode color-theme-solarized)))
  '(projectile-global-mode t)
  '(require-final-newline t)
  '(scroll-bar-mode nil)
@@ -72,6 +73,3 @@
       (js2-mode-hide-warnings-and-errors)
       (flycheck-mode t)
       (flycheck-select-checker 'javascript-eslint))))
-
-(require 'langtool)
-(setq langtool-java-classpath "/usr/share/languagetool:/usr/share/java/languagetool/*")

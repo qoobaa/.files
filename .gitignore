@@ -3,3 +3,5 @@ emacs/.emacs.d/auto-save-list
 emacs/.emacs.d/ido.last
 emacs/.emacs.d/projectile-bookmarks.eld
 emacs/.emacs.d/#ido.last#
+emacs/.emacs.d/tramp
+emacs/.emacs.d/var/
