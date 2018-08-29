@@ -44,7 +44,7 @@
  '(scss-compile-at-save nil)
  '(show-trailing-whitespace t)
  '(tool-bar-mode nil)
- '(user-mail-address "kuba@jah.pl")
+ '(user-mail-address "kuba@kubakuzma.com")
  '(web-mode-code-indent-offset 2)
  '(web-mode-css-indent-offset 2)
  '(web-mode-markup-indent-offset 2))
