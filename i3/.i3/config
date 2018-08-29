@@ -18,7 +18,7 @@ set $mod Mod4
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
-font pango:Inconsolata 14
+font pango:Inconsolata 12
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -34,8 +34,8 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id dmenu_run -fn "Inconsolata-14"
-bindsym $mod+p exec --no-startup-id passmenu -fn "Inconsolata-14"
+bindsym $mod+d exec --no-startup-id dmenu_run -fn "Inconsolata-12"
+bindsym $mod+p exec --no-startup-id passmenu -fn "Inconsolata-12"
 
 # change focus
 bindsym $mod+j focus left
@@ -132,8 +132,8 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
-bindsym XF86AudioRaiseVolume exec amixer set Speaker 5%+ unmute && exec amixer set Master unmute
-bindsym XF86AudioLowerVolume exec amixer set Speaker 5%- unmute && exec amixer set Master unmute
+bindsym XF86AudioRaiseVolume exec amixer set Master 5%+ unmute && exec amixer set Master unmute
+bindsym XF86AudioLowerVolume exec amixer set Master 5%- unmute && exec amixer set Master unmute
 bindsym XF86AudioMute exec amixer set Speaker toggle && exec amixer set Master toggle
 
 # Screen locking
@@ -173,7 +173,7 @@ bindsym $mod+r mode "resize"
 bar {
         # position top
         status_command i3status
-        font pango:Inconsolata, Icons 14
+        font pango:Inconsolata, Icons 12
 }
 
 bindsym Print exec "scrot ~/Downloads/Screenshot\ %Y-%m-%d%H:%M:%S.png"

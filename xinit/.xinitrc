@@ -1,3 +1,3 @@
 [ -f ~/.xprofile ] && source ~/.xprofile
-[[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
+setxkbmap -layout pl -option ctrl:nocaps
 exec i3
