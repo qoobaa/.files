@@ -18,7 +18,7 @@ set $mod Mod4
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
-font pango:Inconsolata 12
+font pango:Inconsolata 14
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -34,8 +34,8 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id dmenu_run -fn "Inconsolata-12"
-bindsym $mod+p exec --no-startup-id passmenu -fn "Inconsolata-12"
+bindsym $mod+d exec --no-startup-id dmenu_run -fn "Inconsolata-14"
+bindsym $mod+p exec --no-startup-id passmenu -fn "Inconsolata-14"
 
 # change focus
 bindsym $mod+j focus left
@@ -140,7 +140,7 @@ bindsym XF86AudioMute exec amixer set Speaker toggle && exec amixer set Master t
 bindsym Control+Mod1+l exec --no-startup-id xset s activate
 
 # Touchpad toggling
-bindsym $mod+F1 exec --no-startup-id touchpad-toggle.sh
+bindsym $mod+F12 exec --no-startup-id touchpad-toggle.sh
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -173,7 +173,7 @@ bindsym $mod+r mode "resize"
 bar {
         # position top
         status_command i3status
-        font pango:Inconsolata, Icons 12
+        font pango:Inconsolata, Icons 14
 }
 
 bindsym Print exec "scrot ~/Downloads/Screenshot\ %Y-%m-%d%H:%M:%S.png"
@@ -185,7 +185,7 @@ exec --no-startup-id xrdb -merge ~/.Xresources
 exec --no-startup-id srandrd autorandr -c
 exec --no-startup-id pkill redshift || sleep 3 && redshift -l 50.3:18.6 -b 0.9 -t 5500:3700
 exec --no-startup-id pkill xss-lock || sleep 3 && xss-lock -- i3lock -c "#333333"
-exec --no-startup-id pkill syndaemon || sleep 3 && syndaemon -i1 -td
+exec --no-startup-id touchpad-toggle.sh
 
 new_window 1pixel
 focus_follows_mouse no

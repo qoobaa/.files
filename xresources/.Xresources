@@ -6,6 +6,7 @@ xterm*on4Clicks:       group
 xterm*on5Clicks:       page
 
 xterm*selectToClipboard: true
+xterm*decTerminalID:   vt340
 
 ! Common
 
@@ -72,4 +73,3 @@ xterm*selectToClipboard: true
 *color13:                 S_violet
 *color14:                 S_base1
 *color15:                 S_base3
-

@@ -37,7 +37,7 @@
      ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(package-selected-packages
    (quote
-    (terraform-mode json-reformat csv-mode rjsx-mode scad-mode dockerfile-mode yaml-mode web-mode ruby-tools ruby-end markdown-mode js2-mode color-theme-solarized)))
+    (rubocop flymake-ruby terraform-mode json-reformat csv-mode rjsx-mode scad-mode dockerfile-mode yaml-mode web-mode ruby-tools ruby-end markdown-mode js2-mode color-theme-solarized)))
  '(projectile-global-mode t)
  '(require-final-newline t)
  '(scroll-bar-mode nil)
@@ -58,6 +58,7 @@
 (load-theme 'solarized t)
 
 (add-hook 'ruby-mode-hook 'flymake-ruby-load)
+(add-hook 'ruby-mode-hook 'rubocop-mode)
 (add-hook 'ruby-mode-hook 'ruby-end-mode)
 (add-hook 'ruby-mode-hook 'ruby-tools-mode)
 (add-hook 'js2-mode-hook 'qoobaa/js2-mode-setup)
