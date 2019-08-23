@@ -31,6 +31,9 @@ ZSH_THEME="fishy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
+# export TERM="xterm-256color"
+# source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
+
 source $ZSH/oh-my-zsh.sh
 
 export GOPATH=$HOME/.go

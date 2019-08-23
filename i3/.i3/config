@@ -176,7 +176,7 @@ bar {
         font pango:Inconsolata, Icons 14
 }
 
-bindsym Print exec "scrot ~/Downloads/Screenshot\ %Y-%m-%d%H:%M:%S.png"
+bindsym Print exec "gnome-screenshot -i"
 # assign [instance="crx_nckgahadagoaajjgafhacjanaoiihapd"] 2
 
 exec --no-startup-id xsetroot -solid "#333333"
