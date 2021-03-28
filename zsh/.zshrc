@@ -41,10 +41,11 @@ export PATH=$PATH:/opt/android-sdk/tools:/opt/android-sdk/build-tools/19.0.1:/op
 
 alias webserver="python -m http.server"
 
-export PATH=$PATH:./node_modules/.bin
+export PATH=$PATH:./node_modules/.bin:$HOME/.node_modules/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
+export npm_config_prefix=~/.node_modules
 
 export GPG_TTY=$(tty)
 export EDITOR=/usr/bin/emacs
@@ -54,3 +55,4 @@ source /usr/share/nvm/nvm.sh
 source /usr/share/nvm/bash_completion
 source /usr/share/nvm/install-nvm-exec
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+

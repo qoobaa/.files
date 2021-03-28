@@ -19,3 +19,5 @@
 	editor = mcedit
 [commit]
 	gpgsign = true
+[pull]
+	rebase = false
