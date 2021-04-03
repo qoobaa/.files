@@ -49,6 +49,7 @@ export npm_config_prefix=~/.node_modules
 
 export GPG_TTY=$(tty)
 export EDITOR=/usr/bin/emacs
+export WINIT_X11_SCALE_FACTOR=1
 
 [ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
 source /usr/share/nvm/nvm.sh

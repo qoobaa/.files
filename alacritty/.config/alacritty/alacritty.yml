@@ -1,21 +1,21 @@
 font:
   normal:
-    family: Ubuntu Mono
+    family: Source Code Pro
     style: Regular
 
   bold:
-    family: Ubuntu Mono
+    family: Source Code Pro
     style: Bold
 
   italic:
-    family: Ubuntu Mono
+    family: Source Code Pro
     style: Italic
 
   bold_italic:
-    family: Ubuntu Mono
+    family: Source Code Pro
     style: Bold Italic
 
-  size: 10
+  size: 9
 
 # Colors (Solarized Light)
 colors:

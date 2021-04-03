@@ -37,7 +37,7 @@
  '(js2-mode-escape-quotes nil)
  '(menu-bar-mode nil)
  '(package-selected-packages
-   '(dockerfile-mode company tide default-font-presets typescript-mode yaml-mode scad-mode scad-preview js2-mode web-mode ruby-end ruby-tools solarized-theme))
+   '(mmm-mode graphql-mode dockerfile-mode company tide default-font-presets typescript-mode yaml-mode scad-mode scad-preview js2-mode web-mode ruby-end ruby-tools solarized-theme))
  '(projectile-global-mode t)
  '(require-final-newline t)
  '(scroll-bar-mode nil)
