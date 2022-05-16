@@ -37,13 +37,13 @@
  '(js2-mode-escape-quotes nil)
  '(menu-bar-mode nil)
  '(package-selected-packages
-   '(mmm-mode graphql-mode dockerfile-mode company tide default-font-presets typescript-mode yaml-mode scad-mode scad-preview js2-mode web-mode ruby-end ruby-tools solarized-theme))
+   '(lsp-mode mmm-mode graphql-mode dockerfile-mode company tide default-font-presets typescript-mode yaml-mode scad-mode scad-preview js2-mode web-mode ruby-end ruby-tools solarized-theme))
  '(projectile-global-mode t)
  '(require-final-newline t)
+ '(ruby-insert-encoding-magic-comment nil)
  '(scroll-bar-mode nil)
  '(scss-compile-at-save nil)
  '(show-trailing-whitespace t)
- '(tool-bar-mode nil)
  '(typescript-indent-level 2)
  '(user-mail-address "kuba@kubakuzma.com")
  '(web-mode-code-indent-offset 2)
@@ -51,6 +51,9 @@
  '(web-mode-markup-indent-offset 2))
 
 (load-theme 'solarized-light t)
+
+(if window-system
+    (tool-bar-mode -1))
 
 (add-hook 'ruby-mode-hook 'ruby-end-mode)
 (add-hook 'ruby-mode-hook 'ruby-tools-mode)
