@@ -15,9 +15,11 @@
 [push]
 	default = matching
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = /home/kuba/.gitignore
 	editor = mcedit
 [commit]
 	gpgsign = true
 [pull]
 	rebase = false
+[init]
+	defaultbranch = main
