@@ -45,15 +45,12 @@ export PATH=$PATH:./node_modules/.bin:$HOME/.node_modules/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
-export npm_config_prefix=~/.node_modules
 
 export GPG_TTY=$(tty)
 export EDITOR=/usr/bin/emacs
 export WINIT_X11_SCALE_FACTOR=1
 
-[ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
-source /usr/share/nvm/nvm.sh
-source /usr/share/nvm/bash_completion
-source /usr/share/nvm/install-nvm-exec
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
